@@ -13,7 +13,6 @@ import PredictionTable from "./components/PredictionTable";
 // Import the new full-screen loader
 import EnvironmentLoader from "./components/EnvironmentLoader";
 
-
 function App() {
   const [selectedSatellite, setSelectedSatellite] = useState(null);
   const [showAllSatellites, setShowAllSatellites] = useState(true);
@@ -113,9 +112,9 @@ function App() {
         setIsLoadingSatellites(true);
         setSatelliteError(null);
 
-        const response = await fetch(
-          "http://localhost:3000/api/complete_data?n=10"
-        );
+        const API_BASE_URL =
+          import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+        const response = await fetch(`${API_BASE_URL}/complete_data?n=10`);
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -313,7 +312,7 @@ function App() {
       />
     );
   }
-  
+
   // If loaded and no error, return the main app UI
   return (
     <div
@@ -407,9 +406,6 @@ function App() {
       {heatmapGenerated && !simulateMode && (
         <PredictHeatmapButton onClick={handlePredictHeatmap} />
       )}
-
-
-     
 
       <Timeline
         simNowRef={simNowRef}

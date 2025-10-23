@@ -211,7 +211,9 @@ const ControlPanel = ({
 
     setIsSearching(true);
     try {
-      const url = `http://localhost:3000/api/search_results?search=${encodeURIComponent(
+      const API_BASE_URL =
+        import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+      const url = `${API_BASE_URL}/search_results?search=${encodeURIComponent(
         q
       )}`;
       const resp = await fetch(url, { method: "GET", mode: "cors" });
