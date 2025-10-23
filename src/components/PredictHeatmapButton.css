@@ -1,0 +1,78 @@
+/* components/PredictHeatmapButton.css */
+.predict-button-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.predict-button {
+  width: 300px; /* Slightly wider for new text */
+  height: 60px;
+  font-size: 16px;
+  background: rgba(10, 30, 10, 0.8); /* Greenish background */
+}
+
+.predict-button .button-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.predict-button-container .button-hexagons {
+  width: 340px;
+  height: 120px;
+}
+
+.predict-button-container .digital-glyphs {
+  width: 370px;
+  height: 150px;
+}
+
+.predict-button-container .digital-glyph {
+  font-size: 9px;
+}
+
+.predict-button-container .sound-wave {
+  bottom: -25px;
+}
+
+/* Animation for button appearance */
+.predict-button-container {
+  animation: button-appear 0.5s ease-out;
+}
+
+@keyframes button-appear {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .predict-button-container {
+    top: 10px;
+  }
+  
+  .predict-button {
+    width: 260px;
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .predict-button .button-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}

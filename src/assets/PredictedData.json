@@ -1,0 +1,681 @@
+[
+  {
+    "utctime": "2025-09-10 00:00:00",
+    "x_error": -0.379004,
+    "y_error": 0.512153,
+    "z_error": -0.489425,
+    "satclockerror": 0.059594
+  },
+  {
+    "utctime": "2025-09-10 00:15:00",
+    "x_error": -0.387525,
+    "y_error": 0.512591,
+    "z_error": -0.447712,
+    "satclockerror": 0.068719
+  },
+  {
+    "utctime": "2025-09-10 00:30:00",
+    "x_error": -0.393278,
+    "y_error": 0.51404,
+    "z_error": -0.40356,
+    "satclockerror": 0.076701
+  },
+  {
+    "utctime": "2025-09-10 00:45:00",
+    "x_error": -0.39586,
+    "y_error": 0.516754,
+    "z_error": -0.357928,
+    "satclockerror": 0.083233
+  },
+  {
+    "utctime": "2025-09-10 01:00:00",
+    "x_error": -0.395161,
+    "y_error": 0.520936,
+    "z_error": -0.311758,
+    "satclockerror": 0.088322
+  },
+  {
+    "utctime": "2025-09-10 01:15:00",
+    "x_error": -0.390976,
+    "y_error": 0.526596,
+    "z_error": -0.26612,
+    "satclockerror": 0.091831
+  },
+  {
+    "utctime": "2025-09-10 01:30:00",
+    "x_error": -0.383326,
+    "y_error": 0.533628,
+    "z_error": -0.22193,
+    "satclockerror": 0.093689
+  },
+  {
+    "utctime": "2025-09-10 01:45:00",
+    "x_error": -0.372204,
+    "y_error": 0.541947,
+    "z_error": -0.180191,
+    "satclockerror": 0.093731
+  },
+  {
+    "utctime": "2025-09-10 02:00:00",
+    "x_error": -0.358009,
+    "y_error": 0.551312,
+    "z_error": -0.141388,
+    "satclockerror": 0.092576
+  },
+  {
+    "utctime": "2025-09-10 02:15:00",
+    "x_error": -0.341163,
+    "y_error": 0.561429,
+    "z_error": -0.105857,
+    "satclockerror": 0.090568
+  },
+  {
+    "utctime": "2025-09-10 02:30:00",
+    "x_error": -0.32183,
+    "y_error": 0.57227,
+    "z_error": -0.073788,
+    "satclockerror": 0.087919
+  },
+  {
+    "utctime": "2025-09-10 02:45:00",
+    "x_error": -0.300954,
+    "y_error": 0.583391,
+    "z_error": -0.045061,
+    "satclockerror": 0.084773
+  },
+  {
+    "utctime": "2025-09-10 03:00:00",
+    "x_error": -0.27911,
+    "y_error": 0.594507,
+    "z_error": -0.01953,
+    "satclockerror": 0.081351
+  },
+  {
+    "utctime": "2025-09-10 03:15:00",
+    "x_error": -0.25674,
+    "y_error": 0.605412,
+    "z_error": 0.003048,
+    "satclockerror": 0.077853
+  },
+  {
+    "utctime": "2025-09-10 03:30:00",
+    "x_error": -0.234068,
+    "y_error": 0.615952,
+    "z_error": 0.022902,
+    "satclockerror": 0.074464
+  },
+  {
+    "utctime": "2025-09-10 03:45:00",
+    "x_error": -0.211449,
+    "y_error": 0.626047,
+    "z_error": 0.040273,
+    "satclockerror": 0.071294
+  },
+  {
+    "utctime": "2025-09-10 04:00:00",
+    "x_error": -0.189202,
+    "y_error": 0.635706,
+    "z_error": 0.055511,
+    "satclockerror": 0.068479
+  },
+  {
+    "utctime": "2025-09-10 04:15:00",
+    "x_error": -0.167408,
+    "y_error": 0.644929,
+    "z_error": 0.068727,
+    "satclockerror": 0.066007
+  },
+  {
+    "utctime": "2025-09-10 04:30:00",
+    "x_error": -0.146281,
+    "y_error": 0.65376,
+    "z_error": 0.080141,
+    "satclockerror": 0.063899
+  },
+  {
+    "utctime": "2025-09-10 04:45:00",
+    "x_error": -0.126092,
+    "y_error": 0.66231,
+    "z_error": 0.090032,
+    "satclockerror": 0.062192
+  },
+  {
+    "utctime": "2025-09-10 05:00:00",
+    "x_error": -0.106767,
+    "y_error": 0.670652,
+    "z_error": 0.098471,
+    "satclockerror": 0.060841
+  },
+  {
+    "utctime": "2025-09-10 05:15:00",
+    "x_error": -0.088127,
+    "y_error": 0.678868,
+    "z_error": 0.105505,
+    "satclockerror": 0.059837
+  },
+  {
+    "utctime": "2025-09-10 05:30:00",
+    "x_error": -0.07021,
+    "y_error": 0.687079,
+    "z_error": 0.111281,
+    "satclockerror": 0.059183
+  },
+  {
+    "utctime": "2025-09-10 05:45:00",
+    "x_error": -0.053101,
+    "y_error": 0.695341,
+    "z_error": 0.115911,
+    "satclockerror": 0.058839
+  },
+  {
+    "utctime": "2025-09-10 06:00:00",
+    "x_error": -0.036875,
+    "y_error": 0.703704,
+    "z_error": 0.119474,
+    "satclockerror": 0.05873
+  },
+  {
+    "utctime": "2025-09-10 06:15:00",
+    "x_error": -0.021483,
+    "y_error": 0.712234,
+    "z_error": 0.122005,
+    "satclockerror": 0.058823
+  },
+  {
+    "utctime": "2025-09-10 06:30:00",
+    "x_error": -0.006896,
+    "y_error": 0.720951,
+    "z_error": 0.123547,
+    "satclockerror": 0.059089
+  },
+  {
+    "utctime": "2025-09-10 06:45:00",
+    "x_error": 0.006878,
+    "y_error": 0.729912,
+    "z_error": 0.124139,
+    "satclockerror": 0.05946
+  },
+  {
+    "utctime": "2025-09-10 07:00:00",
+    "x_error": 0.019896,
+    "y_error": 0.739142,
+    "z_error": 0.123762,
+    "satclockerror": 0.059881
+  },
+  {
+    "utctime": "2025-09-10 07:15:00",
+    "x_error": 0.031978,
+    "y_error": 0.748595,
+    "z_error": 0.122409,
+    "satclockerror": 0.060239
+  },
+  {
+    "utctime": "2025-09-10 07:30:00",
+    "x_error": 0.043341,
+    "y_error": 0.758339,
+    "z_error": 0.12021,
+    "satclockerror": 0.060742
+  },
+  {
+    "utctime": "2025-09-10 07:45:00",
+    "x_error": 0.054029,
+    "y_error": 0.768358,
+    "z_error": 0.117229,
+    "satclockerror": 0.061385
+  },
+  {
+    "utctime": "2025-09-10 08:00:00",
+    "x_error": 0.064048,
+    "y_error": 0.778647,
+    "z_error": 0.113508,
+    "satclockerror": 0.062128
+  },
+  {
+    "utctime": "2025-09-10 08:15:00",
+    "x_error": 0.073395,
+    "y_error": 0.789186,
+    "z_error": 0.109088,
+    "satclockerror": 0.062936
+  },
+  {
+    "utctime": "2025-09-10 08:30:00",
+    "x_error": 0.082088,
+    "y_error": 0.799938,
+    "z_error": 0.104001,
+    "satclockerror": 0.063774
+  },
+  {
+    "utctime": "2025-09-10 08:45:00",
+    "x_error": 0.09015,
+    "y_error": 0.810886,
+    "z_error": 0.098281,
+    "satclockerror": 0.064625
+  },
+  {
+    "utctime": "2025-09-10 09:00:00",
+    "x_error": 0.0976,
+    "y_error": 0.821978,
+    "z_error": 0.091961,
+    "satclockerror": 0.065454
+  },
+  {
+    "utctime": "2025-09-10 09:15:00",
+    "x_error": 0.104456,
+    "y_error": 0.833174,
+    "z_error": 0.085075,
+    "satclockerror": 0.066246
+  },
+  {
+    "utctime": "2025-09-10 09:30:00",
+    "x_error": 0.110746,
+    "y_error": 0.844445,
+    "z_error": 0.077658,
+    "satclockerror": 0.066993
+  },
+  {
+    "utctime": "2025-09-10 09:45:00",
+    "x_error": 0.116493,
+    "y_error": 0.855743,
+    "z_error": 0.069747,
+    "satclockerror": 0.067683
+  },
+  {
+    "utctime": "2025-09-10 10:00:00",
+    "x_error": 0.121717,
+    "y_error": 0.867026,
+    "z_error": 0.061379,
+    "satclockerror": 0.06831
+  },
+  {
+    "utctime": "2025-09-10 10:15:00",
+    "x_error": 0.126447,
+    "y_error": 0.878254,
+    "z_error": 0.052594,
+    "satclockerror": 0.068873
+  },
+  {
+    "utctime": "2025-09-10 10:30:00",
+    "x_error": 0.130726,
+    "y_error": 0.889402,
+    "z_error": 0.043433,
+    "satclockerror": 0.069381
+  },
+  {
+    "utctime": "2025-09-10 10:45:00",
+    "x_error": 0.134598,
+    "y_error": 0.900457,
+    "z_error": 0.033937,
+    "satclockerror": 0.069857
+  },
+  {
+    "utctime": "2025-09-10 11:00:00",
+    "x_error": 0.138062,
+    "y_error": 0.911371,
+    "z_error": 0.024149,
+    "satclockerror": 0.070299
+  },
+  {
+    "utctime": "2025-09-10 11:15:00",
+    "x_error": 0.141189,
+    "y_error": 0.92213,
+    "z_error": 0.014093,
+    "satclockerror": 0.070714
+  },
+  {
+    "utctime": "2025-09-10 11:30:00",
+    "x_error": 0.143968,
+    "y_error": 0.932718,
+    "z_error": 0.003789,
+    "satclockerror": 0.071096
+  },
+  {
+    "utctime": "2025-09-10 11:45:00",
+    "x_error": 0.146488,
+    "y_error": 0.943001,
+    "z_error": -0.006752,
+    "satclockerror": 0.071327
+  },
+  {
+    "utctime": "2025-09-10 12:00:00",
+    "x_error": 0.148811,
+    "y_error": 0.952929,
+    "z_error": -0.017556,
+    "satclockerror": 0.071348
+  },
+  {
+    "utctime": "2025-09-10 12:15:00",
+    "x_error": 0.150983,
+    "y_error": 0.962483,
+    "z_error": -0.028661,
+    "satclockerror": 0.071129
+  },
+  {
+    "utctime": "2025-09-10 12:30:00",
+    "x_error": 0.152998,
+    "y_error": 0.971658,
+    "z_error": -0.040092,
+    "satclockerror": 0.070682
+  },
+  {
+    "utctime": "2025-09-10 12:45:00",
+    "x_error": 0.15484,
+    "y_error": 0.980455,
+    "z_error": -0.051871,
+    "satclockerror": 0.070033
+  },
+  {
+    "utctime": "2025-09-10 13:00:00",
+    "x_error": 0.156492,
+    "y_error": 0.988856,
+    "z_error": -0.064018,
+    "satclockerror": 0.069196
+  },
+  {
+    "utctime": "2025-09-10 13:15:00",
+    "x_error": 0.157939,
+    "y_error": 0.99687,
+    "z_error": -0.076544,
+    "satclockerror": 0.068209
+  },
+  {
+    "utctime": "2025-09-10 13:30:00",
+    "x_error": 0.159236,
+    "y_error": 1.004243,
+    "z_error": -0.089341,
+    "satclockerror": 0.067124
+  },
+  {
+    "utctime": "2025-09-10 13:45:00",
+    "x_error": 0.160407,
+    "y_error": 1.010762,
+    "z_error": -0.10231,
+    "satclockerror": 0.065999
+  },
+  {
+    "utctime": "2025-09-10 14:00:00",
+    "x_error": 0.161413,
+    "y_error": 1.016385,
+    "z_error": -0.115457,
+    "satclockerror": 0.064843
+  },
+  {
+    "utctime": "2025-09-10 14:15:00",
+    "x_error": 0.16218,
+    "y_error": 1.021096,
+    "z_error": -0.128809,
+    "satclockerror": 0.063639
+  },
+  {
+    "utctime": "2025-09-10 14:30:00",
+    "x_error": 0.162627,
+    "y_error": 1.024913,
+    "z_error": -0.142418,
+    "satclockerror": 0.062373
+  },
+  {
+    "utctime": "2025-09-10 14:45:00",
+    "x_error": 0.162669,
+    "y_error": 1.027866,
+    "z_error": -0.156323,
+    "satclockerror": 0.061031
+  },
+  {
+    "utctime": "2025-09-10 15:00:00",
+    "x_error": 0.162242,
+    "y_error": 1.029969,
+    "z_error": -0.170559,
+    "satclockerror": 0.059609
+  },
+  {
+    "utctime": "2025-09-10 15:15:00",
+    "x_error": 0.161286,
+    "y_error": 1.031232,
+    "z_error": -0.185163,
+    "satclockerror": 0.058108
+  },
+  {
+    "utctime": "2025-09-10 15:30:00",
+    "x_error": 0.159732,
+    "y_error": 1.031682,
+    "z_error": -0.200177,
+    "satclockerror": 0.056519
+  },
+  {
+    "utctime": "2025-09-10 15:45:00",
+    "x_error": 0.157518,
+    "y_error": 1.031353,
+    "z_error": -0.215634,
+    "satclockerror": 0.054837
+  },
+  {
+    "utctime": "2025-09-10 16:00:00",
+    "x_error": 0.154583,
+    "y_error": 1.030272,
+    "z_error": -0.231554,
+    "satclockerror": 0.053058
+  },
+  {
+    "utctime": "2025-09-10 16:15:00",
+    "x_error": 0.150877,
+    "y_error": 1.028469,
+    "z_error": -0.247952,
+    "satclockerror": 0.051184
+  },
+  {
+    "utctime": "2025-09-10 16:30:00",
+    "x_error": 0.146366,
+    "y_error": 1.025972,
+    "z_error": -0.264833,
+    "satclockerror": 0.049208
+  },
+  {
+    "utctime": "2025-09-10 16:45:00",
+    "x_error": 0.141021,
+    "y_error": 1.022805,
+    "z_error": -0.282195,
+    "satclockerror": 0.047131
+  },
+  {
+    "utctime": "2025-09-10 17:00:00",
+    "x_error": 0.134821,
+    "y_error": 1.018984,
+    "z_error": -0.300031,
+    "satclockerror": 0.044948
+  },
+  {
+    "utctime": "2025-09-10 17:15:00",
+    "x_error": 0.127746,
+    "y_error": 1.014534,
+    "z_error": -0.318323,
+    "satclockerror": 0.042672
+  },
+  {
+    "utctime": "2025-09-10 17:30:00",
+    "x_error": 0.119784,
+    "y_error": 1.009472,
+    "z_error": -0.337046,
+    "satclockerror": 0.040316
+  },
+  {
+    "utctime": "2025-09-10 17:45:00",
+    "x_error": 0.110925,
+    "y_error": 1.003814,
+    "z_error": -0.356168,
+    "satclockerror": 0.037892
+  },
+  {
+    "utctime": "2025-09-10 18:00:00",
+    "x_error": 0.100637,
+    "y_error": 0.997356,
+    "z_error": -0.375441,
+    "satclockerror": 0.035546
+  },
+  {
+    "utctime": "2025-09-10 18:15:00",
+    "x_error": 0.088539,
+    "y_error": 0.989957,
+    "z_error": -0.394469,
+    "satclockerror": 0.033552
+  },
+  {
+    "utctime": "2025-09-10 18:30:00",
+    "x_error": 0.074466,
+    "y_error": 0.981585,
+    "z_error": -0.412837,
+    "satclockerror": 0.032103
+  },
+  {
+    "utctime": "2025-09-10 18:45:00",
+    "x_error": 0.058297,
+    "y_error": 0.972244,
+    "z_error": -0.429954,
+    "satclockerror": 0.031365
+  },
+  {
+    "utctime": "2025-09-10 19:00:00",
+    "x_error": 0.039726,
+    "y_error": 0.962106,
+    "z_error": -0.445054,
+    "satclockerror": 0.031609
+  },
+  {
+    "utctime": "2025-09-10 19:15:00",
+    "x_error": 0.019077,
+    "y_error": 0.951132,
+    "z_error": -0.457846,
+    "satclockerror": 0.032881
+  },
+  {
+    "utctime": "2025-09-10 19:30:00",
+    "x_error": -0.003366,
+    "y_error": 0.939415,
+    "z_error": -0.468075,
+    "satclockerror": 0.035214
+  },
+  {
+    "utctime": "2025-09-10 19:45:00",
+    "x_error": -0.027342,
+    "y_error": 0.927092,
+    "z_error": -0.475488,
+    "satclockerror": 0.038611
+  },
+  {
+    "utctime": "2025-09-10 20:00:00",
+    "x_error": -0.052594,
+    "y_error": 0.914299,
+    "z_error": -0.479846,
+    "satclockerror": 0.043041
+  },
+  {
+    "utctime": "2025-09-10 20:15:00",
+    "x_error": -0.078835,
+    "y_error": 0.901183,
+    "z_error": -0.480928,
+    "satclockerror": 0.048435
+  },
+  {
+    "utctime": "2025-09-10 20:30:00",
+    "x_error": -0.1058,
+    "y_error": 0.887889,
+    "z_error": -0.478511,
+    "satclockerror": 0.054709
+  },
+  {
+    "utctime": "2025-09-10 20:45:00",
+    "x_error": -0.133195,
+    "y_error": 0.874596,
+    "z_error": -0.472227,
+    "satclockerror": 0.062029
+  },
+  {
+    "utctime": "2025-09-10 21:00:00",
+    "x_error": -0.160779,
+    "y_error": 0.861461,
+    "z_error": -0.461706,
+    "satclockerror": 0.070412
+  },
+  {
+    "utctime": "2025-09-10 21:15:00",
+    "x_error": -0.188251,
+    "y_error": 0.848713,
+    "z_error": -0.446614,
+    "satclockerror": 0.079754
+  },
+  {
+    "utctime": "2025-09-10 21:30:00",
+    "x_error": -0.215148,
+    "y_error": 0.836878,
+    "z_error": -0.42659,
+    "satclockerror": 0.090091
+  },
+  {
+    "utctime": "2025-09-10 21:45:00",
+    "x_error": -0.241236,
+    "y_error": 0.82636,
+    "z_error": -0.401188,
+    "satclockerror": 0.101378
+  },
+  {
+    "utctime": "2025-09-10 22:00:00",
+    "x_error": -0.265831,
+    "y_error": 0.817402,
+    "z_error": -0.37051,
+    "satclockerror": 0.113292
+  },
+  {
+    "utctime": "2025-09-10 22:15:00",
+    "x_error": -0.288119,
+    "y_error": 0.810057,
+    "z_error": -0.334719,
+    "satclockerror": 0.125716
+  },
+  {
+    "utctime": "2025-09-10 22:30:00",
+    "x_error": -0.30722,
+    "y_error": 0.80385,
+    "z_error": -0.29379,
+    "satclockerror": 0.138551
+  },
+  {
+    "utctime": "2025-09-10 22:45:00",
+    "x_error": -0.322457,
+    "y_error": 0.799031,
+    "z_error": -0.248421,
+    "satclockerror": 0.151318
+  },
+  {
+    "utctime": "2025-09-10 23:00:00",
+    "x_error": -0.33327,
+    "y_error": 0.795945,
+    "z_error": -0.199606,
+    "satclockerror": 0.16357
+  },
+  {
+    "utctime": "2025-09-10 23:15:00",
+    "x_error": -0.339316,
+    "y_error": 0.794859,
+    "z_error": -0.148307,
+    "satclockerror": 0.175004
+  },
+  {
+    "utctime": "2025-09-10 23:30:00",
+    "x_error": -0.340317,
+    "y_error": 0.795924,
+    "z_error": -0.095757,
+    "satclockerror": 0.185118
+  },
+  {
+    "utctime": "2025-09-10 23:45:00",
+    "x_error": -0.336215,
+    "y_error": 0.799357,
+    "z_error": -0.043009,
+    "satclockerror": 0.193802
+  },
+  {
+    "utctime": "2025-09-11 00:00:00",
+    "x_error": -0.326808,
+    "y_error": 0.805099,
+    "z_error": 0.008531,
+    "satclockerror": 0.200533
+  }
+]

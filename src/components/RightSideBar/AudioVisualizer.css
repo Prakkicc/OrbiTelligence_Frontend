@@ -1,0 +1,33 @@
+.visualizer-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 185px; /* Let's reduce the height a bit for the sidebar */
+  overflow: hidden;
+}
+
+/* Each vertical bar */
+.visualizer-bar {
+  display: flex;
+  flex-direction: column-reverse; /* fill from bottom up */
+  justify-content: flex-start;
+  gap: 2px; /* spacing between blocks */
+  width: 10px;
+}
+
+/* Each block inside a bar */
+.visualizer-block {
+  flex: 1;
+  min-height: 6px;  /* controls block height */
+  background-color: #1dbcc7; /* active block color */
+  border-radius: 2px;
+  opacity: 0.15; /* default (inactive) */
+  transition: opacity 0.15s ease-in-out;
+}
+
+/* Active (turned on) block */
+.visualizer-block.active {
+  opacity: 1;
+}

@@ -1,0 +1,16 @@
+{
+  "sun": {
+    "name": "Sun",
+    "radius_km": 696340.0,
+    "average_distance_from_earth_km": 149597870.0,
+    "reference_frame": "Heliocentric",
+    "luminosity": 3.828e26,
+    "temperature_K": 5778,
+    "color": "#fff5cc",
+    "position": {
+      "x": 149597870.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  }
+}

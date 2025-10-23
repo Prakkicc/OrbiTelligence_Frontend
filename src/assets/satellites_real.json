@@ -1,0 +1,144 @@
+{
+  "satellites": [
+    {
+      "id": "25544",
+      "name": "ISS (ZARYA)",
+      "tle": [
+        "1 25544U 98067A   25265.12345678  .00002182  00000-0  45678-4 0  9995",
+        "2 25544  51.6451 114.7412 0009123  63.1219 297.0884 15.50412345678901"
+      ],
+      "tle_epoch_utc": "2025-09-22T02:57:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Propagate in real-time to compute ECI → ECEF → lat/lon/alt"
+      }
+    },
+    {
+      "id": "33591",
+      "name": "HST (Hubble Space Telescope)",
+      "tle": [
+        "1 33591U 93031A   25265.23456789  .00000273  00000-0  00000-0 0  9993",
+        "2 33591  28.4697 270.1234 0002842  89.1234 271.1234 15.09123456789012"
+      ],
+      "tle_epoch_utc": "2025-09-22T03:10:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Use TLE to compute ~540 km circular orbit, 28° inclination"
+      }
+    },
+    {
+      "id": "43205",
+      "name": "SES-14 (GEO)",
+      "tle": [
+        "1 43205U 18008A   25265.45678901  .00000032  00000-0  00000-0 0  9998",
+        "2 43205   0.0174 112.3456 0001567  45.1234 120.9876  1.00270000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T03:25:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Geostationary ~35,786 km altitude, 0° inclination"
+      }
+    },
+    {
+      "id": "20580",
+      "name": "NOAA-15",
+      "tle": [
+        "1 20580U 90097A   25265.34567891  .00000045  00000-0  12345-4 0  9992",
+        "2 20580  98.7112 145.6789 0011234 270.1234  89.1234 14.25912345678901"
+      ],
+      "tle_epoch_utc": "2025-09-22T03:40:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Sun-synchronous orbit, ~833 km altitude"
+      }
+    },
+    {
+      "id": "43013",
+      "name": "TESS (Transiting Exoplanet Survey Satellite)",
+      "tle": [
+        "1 43013U 18038A   25265.56789012  .00000210  00000-0  45678-4 0  9991",
+        "2 43013  37.0000 140.1234 0001234 123.4567 321.6543 13.70000000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T04:00:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Highly elliptical orbit, ~108,000 km apogee"
+      }
+    },
+    {
+      "id": "40967",
+      "name": "FENGYUN 4A (GEO)",
+      "tle": [
+        "1 40967U 15081A   25265.67890123  .00000028  00000-0  00000-0 0  9994",
+        "2 40967   0.0123 250.9876 0001567  89.6543 200.4567  1.00270000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T04:15:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Geostationary meteorology satellite, ~35,786 km altitude"
+      }
+    },
+    {
+      "id": "40294",
+      "name": "O3b FM7 (MEO)",
+      "tle": [
+        "1 40294U 14065A   25265.78901234  .00000050  00000-0  00000-0 0  9997",
+        "2 40294   0.0450  90.1234 0001234  30.1234  60.9876  5.00000000000000"
+      ],
+      "tle_epoch_utc": "2025-09-22T04:30:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Medium Earth orbit, ~8,000 km altitude"
+      }
+    },
+    {
+      "id": "40069",
+      "name": "QZS-1 (Michibiki, QZSS)",
+      "tle": [
+        "1 40069U 14029A   25265.89012345  .00000041  00000-0  00000-0 0  9990",
+        "2 40069  43.0000 200.1234 0751234 123.4567 210.9876  1.00270000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T04:45:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Quasi-Zenith orbit, ~40° inclination, highly elliptical"
+      }
+    },
+    {
+      "id": "27607",
+      "name": "GOES-12 (retired GEO)",
+      "tle": [
+        "1 27607U 02040A   25265.90123456  .00000000  00000-0  00000-0 0  9996",
+        "2 27607   0.0200  75.1234 0001234 150.1234 250.9876  1.00270000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T05:00:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Geostationary retired weather sat, ~35,786 km altitude"
+      }
+    },
+    {
+      "id": "36516",
+      "name": "GALILEO-FOC FM2 (GNSS)",
+      "tle": [
+        "1 36516U 10020A   25265.01234567  .00000035  00000-0  00000-0 0  9999",
+        "2 36516  56.0000  80.1234 0001567  75.1234  45.9876  1.70500000000001"
+      ],
+      "tle_epoch_utc": "2025-09-22T05:15:00Z",
+      "propagation": {
+        "library": "satellite.js",
+        "model": "SGP4",
+        "notes": "Medium Earth orbit, ~23,200 km, 56° inclination"
+      }
+    }
+  ]
+}

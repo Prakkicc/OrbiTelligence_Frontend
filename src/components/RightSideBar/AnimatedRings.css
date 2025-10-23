@@ -1,0 +1,84 @@
+.frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame::before {
+  content: "";
+  position: absolute;
+  width: 16%;
+  height: 16%;
+  background: radial-gradient(#aaa, #ddd);
+  box-shadow: inset 0.3em 0.1em 0.4em #fff;
+  border-radius: 50%;
+  animation: move 0.5s linear infinite alternate;
+}
+
+.ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  border-style: solid; /* border-width is controlled via inline style */
+}
+
+.ring-1 {
+  --clr: #00ffff80;
+  --dark-clr: #00ffff00;
+
+  border-color: var(--clr);
+  box-shadow: inset 0.2em 0.2em 0.1em var(--dark-clr),
+    inset -0.2em -0.2em 0.1em var(--dark-clr);
+  animation: ring1 4s ease-in infinite alternate;
+}
+
+.ring-2 {
+  --clr: #00ffff80;
+  --dark-clr: #00ffff00;
+
+  width: 85%;
+  height: 85%;
+  border-color: var(--clr);
+  box-shadow: inset 0.2em 0.2em 0.1em var(--dark-clr),
+    inset -0.2em -0.2em 0.1em var(--dark-clr);
+  animation: ring2 4s ease-in infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.ring-3 {
+  --clr: #00ffff80;
+  --dark-clr: #00ffff00;
+
+  width: 67%;
+  height: 67%;
+  border-color: var(--clr);
+  box-shadow: inset 0.2em 0.2em 0.1em var(--dark-clr),
+    inset -0.2em -0.2em 0.1em var(--dark-clr);
+  animation: ring3 3.5s ease-in infinite alternate;
+}
+
+@keyframes move {
+  to {
+    scale: 1.05;
+  }
+}
+
+@keyframes ring1 {
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes ring2 {
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes ring3 {
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

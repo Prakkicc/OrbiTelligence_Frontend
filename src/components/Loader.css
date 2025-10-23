@@ -1,0 +1,143 @@
+/* components/Loader.css */
+
+/* ===== Loader container ===== */
+.loader-container {
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 1002;
+  display: inline-block;
+}
+
+.loader-container.paused {
+  z-index: 1002;
+}
+
+/* ===== SVG frame ===== */
+.svg-frame {
+  width: 150px;
+  height: 150px;
+  transform: scale(0.35);
+  transform-origin: top left;
+  position: relative;
+  /* preserve 3D feel if you used it earlier */
+  transform-style: preserve-3d;
+}
+
+/* ===== Motion of outer loader (tilt on panel open) ===== */
+.svg-frame svg {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  fill: none;
+  filter: drop-shadow(0 0 4px #00aaff);
+  transition: transform 0.5s ease-in-out;
+  /* ensure transforms applied on svg use the svg box */
+  transform-box: fill-box;
+  transform-origin: center center;
+}
+
+/* When panel is open, apply side view transform (tilt) */
+.loader-container.paused .svg-frame svg {
+  transform: rotate(-80deg) skew(30deg) translateX(12px) translateY(-9px);
+}
+
+/* ===== Make sure transform origin is reliable for groups =====
+   This is the key: instruct the browser to use the element's bounding box
+   for transform-origin so <g> rotations behave as expected across browsers. */
+.svg-frame svg g,
+.svg-frame svg g * {
+  transform-box: fill-box;
+  transform-origin: center center;
+}
+
+/* ===== Inner spinning elements =====
+   Give continuous single-direction rotation (linear infinite).
+   Will-change hints compositor to optimize. */
+#big-centro,
+#solo-lines,
+#center,
+#outter-center,
+#center-lines,
+#bottom-dots,
+#top-dots,
+#squares {
+  will-change: transform;
+  animation-name: rotate;
+  animation-duration: 6s;        /* default duration */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;   /* continuous same-direction */
+}
+
+/* Per-element duration tweaks (keeps the layered/staggered feel) */
+#big-centro {
+  animation-duration: 8s;
+}
+#solo-lines {
+  animation-duration: 6s;
+  animation-direction: reverse; /* reverse spin for variety */
+}
+#center {
+  animation-duration: 4s;
+}
+#outter-center {
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+#center-lines {
+  animation-duration: 5s;
+}
+
+/* Additional rotating elements override (if present) */
+#bottom-dots,
+#top-dots,
+#squares {
+  /* use different durations for depth */
+  animation-duration: 7s;
+}
+
+#bottom-dots {
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+#top-dots {
+  animation-duration: 9s;
+}
+#squares {
+  animation-duration: 15s;
+}
+
+/* Continuous spin keyframes (robust) */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Ensure animations keep running even while the outer SVG tilts/opened */
+.loader-container.paused #big-centro,
+.loader-container.paused #solo-lines,
+.loader-container.paused #center,
+.loader-container.paused #outter-center,
+.loader-container.paused #center-lines,
+.loader-container.paused #bottom-dots,
+.loader-container.paused #top-dots,
+.loader-container.paused #squares {
+  animation-play-state: running;
+}
+
+/* Small accessibility: respect reduced motion if user requested */
+@media (prefers-reduced-motion: reduce) {
+  #big-centro,
+  #solo-lines,
+  #center,
+  #outter-center,
+  #center-lines,
+  #bottom-dots,
+  #top-dots,
+  #squares {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "earth": {
+    "name": "Earth",
+    "radius_km": 6371.0,
+    "equatorial_radius_km": 6378.137,
+    "reference_frame": "WGS84",
+    "axial_tilt_deg": 23.439281,
+    "rotation_rate_deg_per_sec": 0.004178070,
+    
+    "clouds_config": {
+      "radius_multiplier": 1.02,
+      "rotation_multiplier": 1.5,
+      "rotation_offset_deg": 0
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "satellites": [
+    {
+      "id": "25544",
+      "name": "International Space Station",
+      "speed": 7.66,
+      "altitude": 0.05,
+      "live-altitude": "420 km",
+      "inclination": 51.6,
+      "raan": 40,
+      "orbitSpeed": 0.01,
+      "orbitOffset": 0,
+      "color": "#00ffff"
+    },
+    {
+      "id": "20580",
+      "name": "Hubble Space Telescope",
+      "speed": 7.59,
+      "altitude": 0.0515,
+      "live-altitude": "539 km",
+      "inclination": 28.5,
+      "raan": 120,
+      "orbitSpeed": 0.08,
+      "orbitOffset": 1.2,
+      "color": "#00ffff"
+    },
+    {
+      "id": "49118",
+      "name": "Starlink-3013",
+      "speed": 7.58,
+      "altitude": 0.0517,
+      "live-altitude": "550 km",
+      "inclination": 55,
+      "raan": 200,
+      "orbitSpeed": 0.012,
+      "orbitOffset": 0.8,
+      "color": "#ff9900"
+    },
+    {
+      "id": "43013",
+      "name": "NOAA-20 Weather Satellite",
+      "speed": 7.44,
+      "altitude": 0.055,
+      "live-altitude": "824 km",
+      "inclination": 0,
+      "raan": 75,
+      "orbitSpeed": 0.07,
+      "orbitOffset": 1.5,
+      "color": "#00ffff"
+    },
+    {
+      "id": "42807",
+      "name": "O3b FM13",
+      "speed": 5.21,
+      "altitude": 0.147,
+      "live-altitude": "8063 km",
+      "inclination": 98.2,
+      "raan": 300,
+      "orbitSpeed": 0.09,
+      "orbitOffset": 2.8,
+      "color": "#ff9900"
+    },
+    {
+      "id": "37868",
+      "name": "GLONASS-M 744",
+      "speed": 3.96,
+      "altitude": 0.288,
+      "live-altitude": "19100 km",
+      "inclination": 98.5,
+      "raan": 10,
+      "orbitSpeed": 0.014,
+      "orbitOffset": 3.2,
+      "color": "#00ffff"
+    },
+    {
+      "id": "48858",
+      "name": "GPS III-5 Satellite",
+      "speed": 3.87,
+      "altitude": 0.302,
+      "live-altitude": "20200 km",
+      "inclination": 98.2,
+      "raan": 60,
+      "orbitSpeed": 0.05,
+      "orbitOffset": 3.8,
+      "color": "#00ffff"
+    },
+    {
+      "id": "44882",
+      "name": "Galileo 24",
+      "speed": 3.66,
+      "altitude": 0.34,
+      "live-altitude": "23222 km",
+      "inclination": 92,
+      "raan": 180,
+      "orbitSpeed": 0.012,
+      "orbitOffset": 4.2,
+      "color": "#00ffff"
+    },
+    {
+      "id": "51821",
+      "name": "GOES 18 Weather Satellite",
+      "speed": 3.07,
+      "altitude": 0.5,
+      "live-altitude": "35786 km",
+      "inclination": 98.7,
+      "raan": 250,
+      "orbitSpeed": 0.013,
+      "orbitOffset": 4.7,
+      "color": "#ff9900"
+    },
+    {
+      "id": "44520",
+      "name": "Intelsat 39",
+      "speed": 3.07,
+      "altitude": 0.499,
+      "live-altitude": "35786 km",
+      "inclination": 20,
+      "raan": 330,
+      "orbitSpeed": 0.01,
+      "orbitOffset": 5.1,
+      "color": "#ff9900"
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap");
+
+/* Control Panel Container */
+.control-panel-container {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  z-index: 1001;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.control-panel-container.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.control-panel-container.closing {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Main Panel */
+.control-panel {
+  width: 50vh;
+  background: rgba(10, 20, 35, 0.95);
+  backdrop-filter: blur(15px);
+  border: 2px solid #00aaff;
+  border-radius: 20px;
+  clip-path: polygon(
+    5% 0%,
+    95% 0%,
+    100% 5%,
+    100% 95%,
+    95% 100%,
+    5% 100%,
+    0% 95%,
+    0% 5%
+  );
+  box-shadow: 0 0 20px #00aaff, 0 0 40px #00aaff, 0 0 60px #00aaff;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.control-panel.animate-panel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.control-panel.closing-panel {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Side Glows */
+.side-glow {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.6),
+    rgba(0, 170, 255, 0)
+  );
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.control-panel.animate-panel .side-glow {
+  opacity: 1;
+}
+
+.control-panel.closing-panel .side-glow {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.side-glow.left {
+  left: -10px;
+}
+
+.side-glow.right {
+  right: -10px;
+  transform: rotate(180deg);
+}
+
+/* Header */
+.panel-header {
+  height: 80px;
+  background: linear-gradient(90deg, #00aaff, #00ffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  color: #0a1423;
+  text-shadow: 0 0 10px #00aaff;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 100% 100%, 0 100%);
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+/* Header Animation */
+.panel-header.animate-header {
+  animation: headerReveal 0.8s forwards cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.panel-header.closing-header {
+  animation: headerClose 0.8s forwards cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes headerReveal {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes headerClose {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+}
+
+/* Body */
+.panel-body {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.5s ease-in-out;
+}
+
+/* Body Animation */
+.panel-body.animate-body {
+  height: 70vh; /* tune to content */
+  opacity: 1;
+}
+
+.panel-body.closing-body {
+  height: 0;
+  opacity: 0;
+  transition: height 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.5s ease-in-out;
+}
+
+/* Scan Lines */
+.scan-lines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 170, 255, 0.05) 0px,
+    transparent 2px,
+    transparent 4px
+  );
+  animation: scanMove 3s linear infinite;
+}
+
+@keyframes scanMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 4px;
+  }
+}
+
+/* Grid Pattern */
+.grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 170, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 170, 255, 0.1) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+/* Shimmer */
+.holo-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0, 170, 255, 0.2) 0%,
+    transparent 70%
+  );
+  animation: holoShimmer 5s linear infinite;
+}
+
+@keyframes holoShimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Radar Sweep */
+.radar {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  border-radius: 50%;
+  background: conic-gradient(rgba(0, 170, 255, 0.25), transparent 40%);
+  animation: radarSweep 6s linear infinite;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.panel-body.animate-body .radar {
+  opacity: 1;
+}
+
+.panel-body.closing-body .radar {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes radarSweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glowing Orbs */
+.orb {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #00aaff;
+  box-shadow: 0 0 12px 3px #00aaff;
+  opacity: 0;
+}
+
+.orb-1 {
+  top: 20px;
+  left: 20px;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.orb-2 {
+  bottom: 25px;
+  right: 25px;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+}
+
+/* Show orbs when body is animated */
+.panel-body.animate-body .orb {
+  opacity: 1;
+}
+
+.panel-body.closing-body .orb {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Inner Content (kept for animation hooks; no text) */
+.panel-inner {
+  position: relative;
+  z-index: 5;
+  color: #00aaff;
+  text-shadow: 0 0 12px #00aaff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.panel-inner.animate-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.panel-inner.closing-inner {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* ---- New UI: Overlay controls, All checkbox, Satellites dropdown ---- */
+
+/* Overlay container for body controls */
+.body-overlay {
+  position: relative;
+  z-index: 6; /* above ambient layers */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 12px;
+}
+
+/* All row */
+.all-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Neon checkbox base */
+.neon-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  user-select: none;
+  color: #cfefff;
+  position: relative;
+}
+
+.neon-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.neon-checkbox .checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #00aaff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.6),
+    inset 0 0 4px rgba(0, 170, 255, 0.6);
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+  position: relative;
+}
+
+.neon-checkbox input:checked + .checkmark {
+  background: radial-gradient(
+    closest-side,
+    rgba(0, 170, 255, 0.7),
+    rgba(0, 170, 255, 0.1)
+  );
+  box-shadow: 0 0 12px rgba(0, 170, 255, 0.9),
+    inset 0 0 6px rgba(0, 170, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.neon-checkbox .label-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #dff7ff;
+  opacity: 0.9;
+}
+
+/* Satellites box */
+.sat-box {
+  background: rgba(10, 20, 35, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 170, 255, 0.6);
+  border-radius: 14px;
+  clip-path: polygon(
+    2% 0%,
+    98% 0%,
+    100% 12%,
+    100% 88%,
+    98% 100%,
+    2% 100%,
+    0% 88%,
+    0% 12%
+  );
+  box-shadow: 0 0 14px rgba(0, 170, 255, 0.45),
+    inset 0 0 10px rgba(0, 170, 255, 0.2);
+  overflow: hidden;
+}
+
+/* Header button */
+.sat-header {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.15),
+    rgba(0, 170, 255, 0.05)
+  );
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #e6fbff;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.sat-header:hover {
+  box-shadow: inset 0 0 12px rgba(0, 170, 255, 0.25);
+}
+
+.sat-header:focus-visible {
+  outline: 2px solid #00e0ff;
+  box-shadow: 0 0 0 4px rgba(0, 224, 255, 0.25);
+}
+
+.sat-title {
+  font-size: 13px;
+}
+
+/* Chevron */
+.chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #00aaff;
+  border-bottom: 2px solid #00aaff;
+  transform: rotate(45deg);
+  transition: transform 0.25s cubic-bezier(0.2, 0.6, 0.2, 1);
+  filter: drop-shadow(0 0 6px rgba(0, 170, 255, 0.6));
+}
+
+.chevron.rot {
+  transform: rotate(-135deg);
+}
+
+/* List */
+.sat-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.sat-list.show {
+  max-height: 30vh; /* scroll cap */
+  opacity: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 170, 255, 0.6) transparent;
+}
+
+.sat-list.show::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sat-list.show::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(0, 170, 255, 0.7), rgba(0, 170, 255, 0.3));
+  border-radius: 6px;
+}
+
+/* Row - Updated for side-by-side layout */
+.sat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px; /* Increased padding */
+  border-top: 1px solid rgba(0, 170, 255, 0.12);
+  color: #d9f6ff;
+  font-size: 0.9rem; /* Increased font size */
+  cursor: pointer;
+}
+
+/* Satellite info container - side by side layout */
+.sat-row > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+/* Satellite ID and Name - side by side */
+.sat-id {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  opacity: 0.95;
+  font-weight: 600;
+  min-width: 60px; /* Ensure consistent width */
+}
+
+.sat-name {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.5px;
+  text-align: left;
+  flex: 1;
+  opacity: 0.9;
+}
+
+/* Selected satellite row */
+.sat-row.selected {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.15),
+    rgba(0, 170, 255, 0.05)
+  ) !important;
+  box-shadow: inset 0 0 8px rgba(0, 170, 255, 0.3);
+  border-left: 3px solid #00aaff;
+}
+
+.sat-row:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.08),
+    rgba(0, 170, 255, 0.02)
+  );
+}
+
+/* Empty state */
+.sat-empty {
+  padding: 12px;
+  text-align: center;
+  color: #a4d9ec;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .chevron,
+  .neon-checkbox .checkmark {
+    transition: none;
+  }
+}
+
+/* Search bar within Satellites box (visible only when open) */
+.sat-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-top: 1px solid rgba(0, 170, 255, 0.18);
+  border-bottom: 1px solid rgba(0, 170, 255, 0.12);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.1),
+    rgba(0, 170, 255, 0.04)
+  );
+}
+
+.sat-search .search-icon {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0, 170, 255, 0.6);
+}
+
+.sat-search .search-icon::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: #00aaff;
+  right: -6px;
+  bottom: -2px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 6px rgba(0, 170, 255, 0.6);
+}
+
+.sat-search input {
+  flex: 1;
+  background: rgba(5, 12, 22, 0.55);
+  border: 1px solid rgba(0, 170, 255, 0.4);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #ffffff; /* <-- changed to white (no quotes) */
+  outline: none;
+  font-size: 12px;
+  box-shadow: inset 0 0 6px rgba(0, 170, 255, 0.25);
+  caret-color: #00e0ff;
+}
+
+.sat-search input::placeholder {
+  color: rgba(200, 240, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sat-search input:focus {
+  border-color: #00e0ff;
+  box-shadow: 0 0 0 3px rgba(0, 224, 255, 0.2),
+    inset 0 0 8px rgba(0, 170, 255, 0.35);
+}
+
+.sat-search .clear-btn {
+  background: transparent;
+  border: 1px solid rgba(0, 170, 255, 0.5);
+  color: #cfefff;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.4),
+    inset 0 0 6px rgba(0, 170, 255, 0.2);
+}
+
+.sat-search .clear-btn:hover {
+  border-color: #00e0ff;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.6),
+    inset 0 0 8px rgba(0, 224, 255, 0.3);
+}
+
+/* HoloButton container styling */
+.holo-button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Adjust the button container to fit within the panel */
+.control-panel .button-container {
+  min-height: auto;
+  margin: 0;
+  transform: scale(0.85); /* Slightly scale down to fit better */
+  transform-origin: center;
+}
+
+/* Ensure the button fits well in the panel */
+.control-panel .holo-button {
+  width: 280px; /* Slightly smaller to fit panel */
+  height: 70px;
+  font-size: 16px;
+}
+
+/* Adjust sound wave position */
+.control-panel .sound-wave {
+  bottom: -25px;
+}
+
+/* Adjust digital glyphs for panel context */
+.control-panel .digital-glyphs {
+  width: 320px;
+  height: 160px;
+}
+
+/* Responsive adjustments */
+@media (max-height: 800px) {
+  .holo-button-container {
+    margin-top: 15px;
+  }
+
+  .control-panel .holo-button {
+    width: 260px;
+    height: 65px;
+    font-size: 15px;
+  }
+
+  .control-panel .button-container {
+    transform: scale(0.8);
+  }
+}
