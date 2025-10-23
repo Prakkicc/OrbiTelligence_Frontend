@@ -983,53 +983,11 @@ function EarthScene({
     }
 
     // chase camera animation
-    if (chaseRef.current?.active) {
-      chaseRef.current.t += delta;
-      const lerp = Math.min(chaseRef.current.t / chaseRef.current.duration, 1);
-      camera.position.lerpVectors(
-        chaseRef.current.startPos,
-        chaseRef.current.endPos,
-        lerp
-      );
-      camera.lookAt(chaseRef.current.target);
-      camera.updateProjectionMatrix();
-      if (lerp >= 1) {
-        chaseRef.current.active = false;
-        try {
-          window.dispatchEvent(
-            new CustomEvent("enter-chase", {
-              detail: {
-                name: selectedSat?.name,
-                position: selectedSat?.position,
-                satrec: selectedSat?.satrec,
-                raw: selectedSat?.raw,
-              },
-            })
-          );
-        } catch (e) {}
-      }
-    }
+    
   });
 
   // when selectedSat changes, prepare chaseRef
-  useEffect(() => {
-    if (!selectedSat) return;
-    chaseRef.current.active = true;
-    chaseRef.current.t = 0;
-    chaseRef.current.duration = 2.5;
-    chaseRef.current.startPos = camera.position.clone();
-    const end = new THREE.Vector3(
-      selectedSat.position[0],
-      selectedSat.position[1],
-      selectedSat.position[2]
-    ).multiplyScalar(1.35);
-    chaseRef.current.endPos = end;
-    chaseRef.current.target = new THREE.Vector3(
-      selectedSat.position[0],
-      selectedSat.position[1],
-      selectedSat.position[2]
-    );
-  }, [selectedSat]);
+  
 
   // --- helper: build corrected path by radial offset of original points ---
   const buildCorrectedPath = (origFloat32, offsetMultiplier = 0.02) => {

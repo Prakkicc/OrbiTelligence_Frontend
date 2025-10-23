@@ -38,9 +38,7 @@ function App() {
   // Filtered satellites passed down to EarthReal
   const [displayedSatellites, setDisplayedSatellites] = useState(null);
 
-  // chase mode
-  const [inChaseMode, setInChaseMode] = useState(false);
-  const [chaseTarget, setChaseTarget] = useState(null);
+  
 
   // ---------------------------------------------------------------------------
   // simulation clock and playback
@@ -137,19 +135,8 @@ function App() {
     fetchSatelliteData();
   }, []);
 
-  // Listen for 'enter-chase' events (EarthReal can dispatch)
-  useEffect(() => {
-    const onEnterChase = (e) => {
-      try {
-        setChaseTarget(e?.detail ?? null);
-        setInChaseMode(true);
-      } catch (err) {
-        // ignore
-      }
-    };
-    window.addEventListener("enter-chase", onEnterChase);
-    return () => window.removeEventListener("enter-chase", onEnterChase);
-  }, []);
+ 
+  
 
   // Add satellite to master list (called by ControlPanel when search selection gets added)
   const handleAddSatelliteToList = (satellite) => {
@@ -368,7 +355,7 @@ function App() {
         onAddSatellite={handleAddSatelliteToList}
       />
 
-      {!inChaseMode && (
+      
         <EarthReal
           satelliteData={displayedSatellites}
           // isLoadingSatellites and satelliteError props removed
@@ -381,8 +368,8 @@ function App() {
           simulateMode={simulateMode}
           simulateTargetName={simulateTarget}
         />
-      )}
-      {inChaseMode && <EarthChaseScene target={chaseTarget} />}
+      
+      
 
       {/* Pass reactive simNowState to SatelliteInfoCard so it updates with timeline/playback */}
       {selectedSatellite && (
