@@ -5,12 +5,12 @@
 ## 📸 Interface Preview
 
 <p align="center">
-  <img src="./screenshots/1.png" width="45%" alt="Main Earth View" />
-  <img src="./screenshots/2.png" width="45%" alt="Simulation Timeline" />
+  <img src="./Screenshot/1.png" width="45%" alt="Main Earth View" />
+  <img src="./Screenshot/2.png" width="45%" alt="Simulation Timeline" />
 </p>
 <p align="center">
-  <img src="./screenshots/3.png" width="45%" alt="Heatmap & Collision Data" />
-  <img src="./screenshots/4.png" width="45%" alt="Satellite Information Panel" />
+  <img src="./Screenshot/3.png" width="45%" alt="Heatmap & Collision Data" />
+  <img src="./Screenshot/4.png" width="45%" alt="Satellite Information Panel" />
 </p>
 
 ## 🚀 Short Intro
